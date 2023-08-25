@@ -5,8 +5,6 @@ import 'package:multi_image_layout/style/text_style.dart';
 import 'package:image_picker/image_picker.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-
   runApp(const MaterialApp(home: App()));
 }
 
@@ -40,31 +38,31 @@ class _AppState extends State<App> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: pickImages,
-          child: Icon(Icons.add),
+          child: const Icon(Icons.add),
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(20.0),
               child: ImageAvatar(),
             ),
-            Text(
+            const Text(
               "Username",
               style: kHeadline,
             ),
-            Text(
+            const Text(
               "Berlin, Germany",
               style: kSubHeadline,
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
-            Text(
+            const Text(
               "Gallery",
               style: kHeadline,
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: Divider(
                 height: 30,
